@@ -33,6 +33,7 @@ gulp.task("webpack:build", function(callback) {
         //         "NODE_ENV": JSON.stringify("production")
         //     }
         // }),
+        new ngminPlugin(),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin()
     );
